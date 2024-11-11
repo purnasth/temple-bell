@@ -43,27 +43,28 @@
     main {
         @apply relative z-10 px-4 py-12 sm:py-24 md:px-12 md:py-32 lg:py-36 xl:px-16 xl:py-48;
     }
-.navlink {
-    @apply transition-300 inline-flex items-center justify-center w-full pb-2 text-5xl font-extrabold capitalize text-dark tracking-wider group-hover:font-bold group-hover:tracking-widest text-center;
-}
 
-.filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
+    .navlink {
+        @apply transition-300 inline-flex items-center justify-center bg-logo-maroon/10 w-full p-8 border border-logo-maroon/20 hover:bg-logo-yellow/10 text-3xl font-extrabold capitalize text-dark tracking-wider group-hover:font-bold group-hover:tracking-widest text-center;
+    }
 
-.filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
-}
+    .filter-white {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
 
-.transition-300 {
-    @apply transition-all duration-300 ease-linear;
-}
+    .filter-black {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+    }
 
-.transition-700 {
-    @apply transition-all duration-700 ease-in-out;
-}
+    .transition-300 {
+        @apply transition-all duration-300 ease-linear;
+    }
 
-.transition-1000 {
-    @apply transition-all duration-1000;
-}
+    .transition-700 {
+        @apply transition-all duration-700 ease-in-out;
+    }
+
+    .transition-1000 {
+        @apply transition-all duration-1000;
+    }
 }

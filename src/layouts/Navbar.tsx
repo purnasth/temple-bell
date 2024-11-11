@@ -1,30 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { CgMenuGridO } from 'react-icons/cg';
-import { PiChefHatBold } from 'react-icons/pi';
+// import { PiChefHatBold } from 'react-icons/pi';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import Logo from '../components/ui/Logo';
 import ContactInfo from '../components/ui/ContactInfo';
-import { TbBellFilled } from 'react-icons/tb';
+// import { TbBellFilled } from 'react-icons/tb';
+import close from '../assets/close.svg';
+// import { LuMoveRight } from "react-icons/lu";
 
 const navLinks = [
   {
     id: 1,
-    title: 'Home',
+    title: 'Temple Bell',
     url: '/',
   },
   {
     id: 2,
-    title: 'About',
+    title: 'Discover Bell',
     url: '/about',
   },
   {
     id: 3,
-    title: 'Rooms',
+    title: 'Rooms & Suites',
     url: '/rooms',
   },
   {
     id: 4,
-    title: 'Services',
+    title: 'Hotel Services',
     url: '/services',
   },
   {
@@ -122,11 +124,12 @@ const Navbar: React.FC = () => {
         />
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute right-6 top-4 flex items-center justify-center gap-2 text-4xl text-black"
+          className="absolute right-4 top-4 flex items-center justify-center gap-2 text-6xl text-black"
           aria-label="Close"
           title="Close"
         >
-          &times;
+          {/* &times; */}
+          <img src={close} alt="Close" className='size-12 object-contain' />
         </button>
 
         <div className="grid size-full grid-cols-3 content-center gap-24 px-8 text-dark">
@@ -137,17 +140,19 @@ const Navbar: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <ul className="links flex flex-col items-center justify-center gap-2 md:gap-4 border p-8 rounded-2xl">
+            <ul className="links flex flex-col items-center justify-center gap-0 border boreder-logo-yellow rounded-3xl overflow-hidden">
               {navLinks.map((link) => (
                 <li className="group w-full">
                   <NavLink
                     to={link.url}
                     className={({ isActive }) =>
-                      `navlink ${isActive ? 'text-logo-yellow [text-shadow:_0_2px_20px_#FFCE35]' : ''}`
+                      `navlink ${isActive ? 'bg-logo-maroon/30 text-logo-maroon' : ''}`
                     }
                     aria-label={link.title}
                   >
                     {link.title}
+                    {/* <i className='bg-light py-0 px-4 rounded-full'>→</i> */}
+                    {/* <LuMoveRight className="w-10 h-5 bg-light group-hover:text-logo-maroon translate-x-4 rounded-full text-xl opacity-0 transition-all duration-300 group-hover:-translate-x-0 group-hover:opacity-100" /> */}
                     {/* <TbBellFilled className="translate-x-4 rounded-full text-3xl opacity-0 transition-all duration-300 group-hover:-translate-x-0 group-hover:opacity-100" /> */}
                   </NavLink>
                 </li>

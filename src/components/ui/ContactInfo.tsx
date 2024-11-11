@@ -6,7 +6,7 @@ const contactInfo = [
   {
     id: 1,
     type: 'location',
-    title: 'Lakeside, Pokhara',
+    title: 'Lakeside Rd 17, Pokhara 33700 ',
     url: 'https://maps.app.goo.gl/BvAi9VpHiQJ843bf9',
     icon: null,
     image: null,
