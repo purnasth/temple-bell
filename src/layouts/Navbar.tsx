@@ -61,29 +61,27 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     setIsOpen(false);
-    document.body.style.overflow = 'auto';
   }, [location]);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
-    document.body.style.overflow = !isOpen ? 'hidden' : 'auto';
   };
 
   return (
     <>
       <header
-        className={`pointer-events-none fixed top-0 z-50 flex w-full items-start justify-between p-4 transition-all duration-1000 ease-in-out`}
+        className={`pointer-events-none fixed top-0 z-40 flex w-full items-start justify-between p-4 transition-all duration-1000 ease-in-out`}
       >
         <Logo
-          aprops={`transition-1000 pointer-events-auto object-contain ${
-            visible ? '-translate-y-0' : '-translate-y-full scale-0'
-          } ${window.scrollY > 0 ? '-translate-y-full scale-0' : 'translate-y-0'}`}
+          aprops={`transition-1000 pointer-events-auto object-contain origin-top-left ${
+            visible ? 'scale-100' : 'scale-50'
+          } ${window.scrollY > 0 ? 'bg-green-1 00' : ''}`}
           className="transition-1000 h-16 w-auto object-contain md:h-40"
         />
         <div className="pointer-events-auto flex gap-2">
           <Link
             to="#"
-            className={`transition-1000 text-light bg-logo-maroon/75 flex items-center justify-center rounded-full px-8 font-medium backdrop-blur-sm ${visible ? 'translate-y-0 scale-100' : '-translate-y-[200%] scale-0'}`}
+            className={`transition-1000 flex items-center justify-center rounded-full bg-logo-maroon/75 px-8 font-medium text-light backdrop-blur-sm ${visible ? 'translate-y-0 scale-100' : '-translate-y-[200%] scale-0'}`}
             aria-label="Book Now"
             title="Book Now"
           >
@@ -91,7 +89,7 @@ const Navbar: React.FC = () => {
           </Link>
           <button
             onClick={toggleNav}
-            className="transition-300 hover:text-logo-maroon text-dark"
+            className="transition-300 text-dark hover:text-logo-maroon"
             aria-label="Menu"
             title="Menu"
           >
@@ -106,11 +104,11 @@ const Navbar: React.FC = () => {
       /> */}
 
       <nav
-        className={`transition-1000 bg-light fixed left-0 top-0 h-screen w-full overflow-y-auto ${
+        className={`transition-1000 fixed inset-0 z-40 h-screen w-full origin-top bg-light ${
           isOpen
-            ? 'pointer-events-auto translate-y-0 opacity-100'
-            : 'pointer-events-none -translate-y-0 opacity-0'
-        } z-50`}
+            ? 'pointer-events-auto opacity-100'
+            : 'pointer-events-none opacity-0'
+        }`}
       >
         <img
           // src="https://t4.ftcdn.net/jpg/09/05/32/71/360_F_905327166_ruIVTYRVJpHN8IEvn2diXAK0oQ2L3pSa.jpg"
@@ -129,7 +127,7 @@ const Navbar: React.FC = () => {
           title="Close"
         >
           {/* &times; */}
-          <img src={close} alt="Close" className='size-12 object-contain' />
+          <img src={close} alt="Close" className="size-12 object-contain" />
         </button>
 
         <div className="grid size-full grid-cols-3 content-center gap-24 px-8 text-dark">
@@ -140,7 +138,7 @@ const Navbar: React.FC = () => {
             />
           </div>
           <div className="w-full">
-            <ul className="links flex flex-col items-center justify-center gap-0 border boreder-logo-yellow rounded-3xl overflow-hidden">
+            <ul className="links boreder-logo-yellow flex flex-col items-center justify-center gap-0 overflow-hidden rounded-3xl border">
               {navLinks.map((link) => (
                 <li className="group w-full">
                   <NavLink
