@@ -24,9 +24,8 @@
   }
 
   main,
-  section,
-  div {
-    @apply font-work-sans;
+  section {
+    @apply font-work-sans bg-light;
   }
 
   .navlink,
@@ -39,6 +38,7 @@
     @apply font-title;
   }
 
+  div,
   p,
   span,
   label,
