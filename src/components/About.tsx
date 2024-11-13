@@ -15,7 +15,7 @@ const About: React.FC = () => {
         <div className="container">
           <div className="flex w-full flex-col items-start gap-4 pl-52">
             {/* <span className="text-lg font-medium">Welcome to</span> */}
-            <h4 className="caps text-2xl font-semibold md:text-6xl md:leading-snug">
+            <h4 className="text-2xl md:text-6xl md:leading-snug">
               Experience serenity and elegance at Temple Bell Boutique Hotel &
               SPA, your newest sanctuary in Lakeside, Pokhara.
             </h4>

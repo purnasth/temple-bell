@@ -1,6 +1,7 @@
 import React from 'react';
 import OffersHome from '../components/ui/OffersHome';
 import About from '../components/About';
+import Stay from '../components/Stay';
 
 const Home: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
         <OffersHome />
       </main>
       <About />
+      <Stay />
     </>
   );
 };
