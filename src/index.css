@@ -60,13 +60,11 @@
   }
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-      hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%)
-      hue-rotate(327deg) brightness(96%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
   }
 
   .transition-300 {
@@ -80,4 +78,44 @@
   .transition-1000 {
     @apply transition-all duration-1000;
   }
+}
+
+.rdp-root {
+  --rdp-accent-color: #981C20;
+  --rdp-accent-background-color: #981c2031;
+  --rdp-day-height: 2.75rem;
+  --rdp-day-width: 2.75rem;
+  --rdp-day_button-border-radius: 100%;
+  --rdp-day_button-border: 2px solid transparent;
+  --rdp-day_button-height: var(--rdp-day-height);
+  --rdp-day_button-width: var(--rdp-day-width);
+  --rdp-selected-border: 2px solid var(--rdp-accent-color);
+  --rdp-disabled-opacity: 0.5;
+  --rdp-outside-opacity: 0.75;
+  --rdp-today-color: var(--rdp-accent-color);
+  --rdp-dropdown-gap: 0.5rem;
+  --rdp-months-gap: 2rem;
+  --rdp-nav_button-disabled-opacity: 0.5;
+  --rdp-nav_button-height: 2.25rem;
+  --rdp-nav_button-width: 2.25rem;
+  --rdp-nav-height: 2.75rem;
+  --rdp-range_middle-background-color: var(--rdp-accent-background-color);
+  --rdp-range_middle-foreground-color: white;
+  --rdp-range_middle-color: inherit;
+  --rdp-range_start-color: white;
+  --rdp-range_start-background: linear-gradient(var(--rdp-gradient-direction), transparent 50%, var(--rdp-range_middle-background-color) 50%);
+  --rdp-range_start-date-background-color: var(--rdp-accent-color);
+  --rdp-range_end-background: linear-gradient(var(--rdp-gradient-direction), var(--rdp-range_middle-background-color) 50%, transparent 50%);
+  --rdp-range_end-color: white;
+  --rdp-range_end-date-background-color: var(--rdp-accent-color);
+  --rdp-week_number-border-radius: 100%;
+  --rdp-week_number-border: 2px solid transparent;
+  --rdp-week_number-height: var(--rdp-day-height);
+  --rdp-week_number-opacity: 0.75;
+  --rdp-week_number-width: var(--rdp-day-width);
+  --rdp-weeknumber-text-align: center;
+  --rdp-weekday-opacity: 0.75;
+  --rdp-weekday-padding: 0.5rem 0rem;
+  --rdp-weekday-text-align: center;
+  --rdp-gradient-direction: 90deg;
 }

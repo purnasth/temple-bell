@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { CgMenuGridO } from 'react-icons/cg';
 // import { PiChefHatBold } from 'react-icons/pi';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../components/ui/Logo';
 import ContactInfo from '../components/ui/ContactInfo';
 // import { TbBellFilled } from 'react-icons/tb';
 import close from '../assets/close.svg';
+import DatePicker from '../components/ui/DatePicker';
 // import { LuMoveRight } from "react-icons/lu";
 
 const navLinks = [
@@ -78,15 +79,16 @@ const Navbar: React.FC = () => {
           } ${window.scrollY > 0 ? 'bg-green-1 00' : ''}`}
           className="transition-1000 h-16 w-auto object-contain md:h-40"
         />
-        <div className="pointer-events-auto flex gap-2">
-          <Link
+        <div className="pointer-events-auto flex gap-0">
+          {/* <Link
             to="#"
             className={`transition-1000 flex items-center justify-center rounded-full bg-logo-maroon/75 px-8 font-medium text-light backdrop-blur-sm ${visible ? 'translate-y-0 scale-100' : '-translate-y-[200%] scale-0'}`}
             aria-label="Book Now"
             title="Book Now"
           >
             Book Now
-          </Link>
+          </Link> */}
+          <DatePicker />
           <button
             onClick={toggleNav}
             className="transition-300 text-dark hover:text-logo-maroon"
