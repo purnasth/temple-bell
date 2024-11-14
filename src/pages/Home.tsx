@@ -5,6 +5,7 @@ import Stay from '../components/Stay';
 import OffersSlider from '../components/OffersSlider';
 
 import heroImage from '../assets/images/test.png';
+import ServicesHome from '../components/ServicesHome';
 
 const Home: React.FC = () => {
   return (
@@ -38,7 +39,7 @@ const Home: React.FC = () => {
           Relax under the gentle hands of our beauticians
         </h3>
       </section>
-      <main></main>
+      <ServicesHome />
     </>
   );
 };

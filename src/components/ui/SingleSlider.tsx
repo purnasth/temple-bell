@@ -10,29 +10,24 @@ interface Slide {
   image: string;
   title?: string;
   description?: string;
-  highlightedFeatures?: string[];
 }
 
-interface RoomSliderProps {
+interface SinglerProps {
   slides: Slide[];
   hasContent?: boolean;
   autoplay?: boolean;
   speed?: number;
   delay?: number;
   sizeClassName?: string;
-  imagesClassName?: string;
-  slidesPerView?: number;
 }
 
-const RoomSlider: React.FC<RoomSliderProps> = ({
+const SingleSlider: React.FC<SinglerProps> = ({
   slides,
   hasContent = false,
   autoplay = true,
   speed = 2000,
   delay = 5000,
-  sizeClassName,
-  slidesPerView = 1.5,
-  imagesClassName,
+  sizeClassName = 'relative flex h-screen items-center justify-center',
 }) => {
   const swiperRef = useRef<any>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,26 +43,13 @@ const RoomSlider: React.FC<RoomSliderProps> = ({
   const handleNext = () => swiperRef.current?.slideNext();
   const handlePrev = () => swiperRef.current?.slidePrev();
 
-  // Function to determine if the slide is fully visible
-  const isSlideFullyVisible = (index: number) => {
-    const itemsInView = Math.floor(slidesPerView);
-    const endIndex = currentIndex + itemsInView - 1;
-
-    // Adjust to handle the loop correctly
-    return (
-      (index >= currentIndex && index <= endIndex) ||
-      (currentIndex + itemsInView > slides.length && index >= slides.length - itemsInView)
-    );
-  };
-
   return (
     <>
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={autoplay ? { delay } : undefined}
-        loop={true}  // Set loop to true
+        loop={true}
         speed={speed}
-        slidesPerView={slidesPerView}
         spaceBetween={20}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="relative h-full"
@@ -77,35 +59,25 @@ const RoomSlider: React.FC<RoomSliderProps> = ({
             <img
               src={slide.image}
               alt={slide.title || `Slide ${index + 1}`}
-              className={` ${imagesClassName} object-cover`}
+              className="h-[40rem] w-full object-cover"
             />
-            {hasContent && isSlideFullyVisible(index) && (
+            {hasContent && (
               <div className="mt-8 w-full space-y-2 px-8 text-start">
                 {slide.title && (
                   <h3 className="text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-5xl lg:leading-none">
                     {slide.title}
                   </h3>
                 )}
-                {slide.highlightedFeatures && (
-                  <ul className="flex gap-2">
-                    {slide.highlightedFeatures.map((feature, index) => (
-                      <li
-                        key={index}
-                        className="rounded-md text-base text-dark/60"
-                      >
-                        {feature}
-                        {slide.highlightedFeatures && index < slide.highlightedFeatures.length - 1 && ' | '}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                {/* {slide.description && (
+                  <p className="text-center text-sm text-dark/60">
+                    {slide.description}
+                  </p>
+                )} */}
               </div>
             )}
           </SwiperSlide>
         ))}
-        
-        {/* Pagination and Navigation */}
-        <div className="absolute bottom-0 right-0 z-10 flex h-auto w-auto items-center justify-end bg-light p-4">
+        <div className="absolute bottom-4 right-0 z-20 flex size-auto items-center justify-end px-8 py-2">
           <SliderNavigation
             currentIndex={currentIndex}
             totalItems={slides.length}
@@ -118,4 +90,4 @@ const RoomSlider: React.FC<RoomSliderProps> = ({
   );
 };
 
-export default RoomSlider;
+export default SingleSlider;
