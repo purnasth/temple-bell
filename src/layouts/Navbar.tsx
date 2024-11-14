@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         <Logo
           aprops={`transition-1000 pointer-events-auto object-contain origin-top-left ${
             visible ? 'scale-100' : 'scale-50'
-          } ${window.scrollY > 0 ? 'bg-green-1 00' : ''}`}
+          } ${window.scrollY > 0 ? 'bg-light scale-50' : ''}`}
           className="transition-1000 h-16 w-auto object-contain md:h-40"
         />
         <div className="pointer-events-auto flex gap-0">
@@ -108,8 +108,8 @@ const Navbar: React.FC = () => {
       <nav
         className={`transition-1000 fixed inset-0 z-40 h-screen w-full origin-top bg-light ${
           isOpen
-            ? 'pointer-events-auto opacity-100'
-            : 'pointer-events-none opacity-0'
+            ? 'pointer-events-auto visible opacity-100'
+            : 'pointer-events-none invisible opacity-0'
         }`}
       >
         <img

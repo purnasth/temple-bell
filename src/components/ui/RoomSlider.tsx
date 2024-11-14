@@ -94,7 +94,7 @@ const RoomSlider: React.FC<RoomrProps> = ({
             )}
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-0 right-0 z-20 flex h-24 w-[70vh] items-center justify-end bg-light p-8">
+        <div className="absolute bottom-0 right-0 z-10 flex h-24 w-[70vh] items-center justify-end bg-light p-8">
           <SliderNavigation
             currentIndex={currentIndex}
             totalItems={slides.length}

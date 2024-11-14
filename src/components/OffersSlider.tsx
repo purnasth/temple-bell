@@ -9,19 +9,19 @@ const OffersSlider: React.FC = () => {
       <div className="absolute left-0 top-0 -translate-x-44">
         <img
           src="https://mayurstay.com/aaryahotel/assets/images/pillar.png"
-          alt=""
-          className="h-[500px] w-full object-contain"
+          alt="Icon"
+          className="pointer-events-none -z-10 h-[500px] w-full object-contain"
         />
       </div>
 
       <div
-        className="absolute left-0 top-0 h-full w-[28rem] bg-cover bg-top bg-repeat-x opacity-10 mix-blend-multiply contrast-150"
+        className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-[28rem] bg-cover bg-top bg-repeat-x opacity-5 mix-blend-multiply contrast-150"
         style={{ backgroundImage: `url(${bellGraphics})` }}
       ></div>
 
       <div className="">
         <div className="grid grid-cols-3 gap-6">
-          <div className="flex w-full flex-col items-start gap-4 pl-20">
+          <div className="flex w-full flex-col items-start gap-4 pl-16">
             <h4 className="text-2xl md:text-6xl md:leading-snug">
               Temple Bell Packages
             </h4>
@@ -35,7 +35,7 @@ const OffersSlider: React.FC = () => {
               aria-label="Explore More"
               title="Explore"
             >
-              <span className="ease-linea absolute -right-0 bottom-0 h-px w-[76%] origin-left scale-x-0 bg-dark transition-all duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute -right-0 bottom-0 h-px w-[76%] origin-left scale-x-0 bg-dark transition-all duration-300 ease-linear group-hover:scale-x-100"></span>
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -55,12 +55,13 @@ const OffersSlider: React.FC = () => {
             </Link>
           </div>
           <div>
-            <div className="overflow-hidden shadow-lg">
+            <div className="overflow-hidden shadow-md">
               <img
                 src={offers}
                 alt="Offers"
                 className="aspect-square size-full overflow-hidden object-cover"
                 loading="lazy"
+                draggable="false"
               />
             </div>
             <div className="mt-4 text-left">
@@ -70,12 +71,13 @@ const OffersSlider: React.FC = () => {
             </div>
           </div>
           <div>
-            <div className="overflow-hidden shadow-lg">
+            <div className="overflow-hidden shadow-md">
               <img
                 src={offers}
                 alt="Offers"
                 className="aspect-square size-full overflow-hidden object-cover"
                 loading="lazy"
+                draggable="false"
               />
             </div>
             <div className="mt-4 text-left">
