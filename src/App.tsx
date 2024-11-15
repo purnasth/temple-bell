@@ -9,13 +9,15 @@ import {
 
 import Navbar from './layouts/Navbar';
 import Home from './pages/Home';
+import MustSee from './pages/MustSee';
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/must-see" element={<MustSee />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Navbar />

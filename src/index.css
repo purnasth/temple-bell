@@ -80,7 +80,15 @@
   }
 }
 
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
 .rdp-root {
+  color: #ffeac7;
   --rdp-accent-color: #981C20;
   --rdp-accent-background-color: #981c2031;
   --rdp-day-height: 2.75rem;

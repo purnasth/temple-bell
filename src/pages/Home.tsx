@@ -6,6 +6,8 @@ import OffersSlider from '../components/OffersSlider';
 
 import heroImage from '../assets/images/test.png';
 import ServicesHome from '../components/ServicesHome';
+import Nearby from '../components/ui/Nearby';
+import TestimonialSlider from '../components/ui/TestimonialSlider';
 
 const Home: React.FC = () => {
   return (
@@ -30,6 +32,7 @@ const Home: React.FC = () => {
       </main>
       <About />
       <Stay />
+      <TestimonialSlider />
       <OffersSlider />
       <section className="relative mix-blend-difference">
         <div className="h-[120vh] w-full bg-[url('https://cdn.prod.website-files.com/60b0c490c031f80841d793e5/60b0c490c031f82db9d79587_hotel-kaskady-wellness-spa-bg__1920px-14.jpg')] bg-cover bg-fixed"></div>
@@ -40,6 +43,7 @@ const Home: React.FC = () => {
         </h3>
       </section>
       <ServicesHome />
+      <Nearby />
     </>
   );
 };

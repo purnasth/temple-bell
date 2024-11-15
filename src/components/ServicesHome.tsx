@@ -12,7 +12,7 @@ const servicesContent = {
   services: [
     {
       id: 'dine-service',
-      title: 'Temple Bell Dine',
+      title: 'Dine',
       description:
         "Experience high end services at Temple Bell Boutique Hotel & SPA. We've got a range of services to make your stay memorable.",
       bannerImage:
@@ -22,18 +22,18 @@ const servicesContent = {
       sliderImages: [
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Dine',
+          alt: 'Dine',
         },
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Dine',
+          alt: 'Dine',
         },
       ],
       amenities: [{ icon: 'TbWifi', image: null, title: 'Free Wifi' }],
     },
     {
       id: 'hall-service',
-      title: 'Temple Bell Hall',
+      title: 'Hall',
       description:
         "Experience high end services at Temple Bell Boutique Hotel & SPA. We've got a range of services to make your stay memorable.",
       bannerImage:
@@ -43,18 +43,18 @@ const servicesContent = {
       sliderImages: [
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Hall',
+          alt: 'Hall',
         },
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Hall',
+          alt: 'Hall',
         },
       ],
       amenities: [{ icon: 'TbWifi', image: null, title: 'Free Wifi' }],
     },
     {
       id: 'spa-service',
-      title: 'Temple Bell SPA',
+      title: 'Spa',
       description:
         "Experience high end services at Temple Bell Boutique Hotel & SPA. We've got a range of services to make your stay memorable.",
       bannerImage:
@@ -64,18 +64,18 @@ const servicesContent = {
       sliderImages: [
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell SPA',
+          alt: 'SPA',
         },
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell SPA',
+          alt: 'SPA',
         },
       ],
       amenities: [{ icon: 'TbWifi', image: null, title: 'Free Wifi' }],
     },
     {
       id: 'pool-service',
-      title: 'Temple Bell Pool',
+      title: 'Pool',
       description:
         "Experience high end services at Temple Bell Boutique Hotel & SPA. We've got a range of services to make your stay memorable.",
       bannerImage:
@@ -85,18 +85,18 @@ const servicesContent = {
       sliderImages: [
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Pool',
+          alt: 'Pool',
         },
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Pool',
+          alt: 'Pool',
         },
       ],
       amenities: [{ icon: 'TbWifi', image: null, title: 'Free Wifi' }],
     },
     {
       id: 'gym-service',
-      title: 'Temple Bell Gym',
+      title: 'Gym',
       description:
         "Experience high end services at Temple Bell Boutique Hotel & SPA. We've got a range of services to make your stay memorable.",
       bannerImage:
@@ -106,11 +106,11 @@ const servicesContent = {
       sliderImages: [
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Gym',
+          alt: 'Gym',
         },
         {
           src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
-          alt: 'Temple Bell Gym',
+          alt: 'Gym',
         },
       ],
       amenities: [{ icon: 'TbWifi', image: null, title: 'Free Wifi' }],

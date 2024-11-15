@@ -10,6 +10,7 @@ module.exports = {
         'logo-yellow': '#FFCE35',
         'logo-maroon': '#981C20',
         'logo-green': '#346833',
+        "logo-dark": "#ffeac7",
       },
       fontFamily: {
         title: ['"Purna Title"', 'Georgia', 'Cambria', 'serif'],
