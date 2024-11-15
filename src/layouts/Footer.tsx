@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 
         <section className="border-t border-dark/20 p-4 text-dark md:py-8">
           <div className="mt-6 flex flex-col items-center justify-center gap-4 px-8 text-sm md:gap-8 md:text-base xl:mt-0 xl:flex-row xl:justify-between xl:gap-12">
-            <span>© 2024 Hotel Da Yatra Courtyard | All Rights Reserved </span>
+            <span>© 2024 Temple Bell Boutique Hotel & SPA | All Rights Reserved </span>
             <div className="flex flex-col items-center gap-4 md:flex-row">
               <span>
                 Website by: &nbsp;
