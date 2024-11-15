@@ -10,17 +10,19 @@ import {
 import Navbar from './layouts/Navbar';
 import Home from './pages/Home';
 import MustSee from './pages/MustSee';
+import Footer from './layouts/Footer';
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/must-see" element={<MustSee />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Navbar />
+        <Footer />
       </Router>
     </>
   );
