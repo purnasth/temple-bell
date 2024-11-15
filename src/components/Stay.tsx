@@ -49,7 +49,7 @@ const stayContent = [
         booking: '#',
         sliderImages: [
           {
-            src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+            src: 'https://www.thedamai.com/media/pages/stay/master-pool-villa/3f172a6437-1703335771/masterpoolvillabedroom-1440x960-crop-q72.jpg',
             alt: 'Temple Villa',
           },
           {
@@ -70,7 +70,7 @@ const stayContent = [
         booking: '#',
         sliderImages: [
           {
-            src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+            src: 'https://www.thedamai.com/media/pages/stay/pool-villa/fe00dbc11a-1703335748/poolvillabedroommaster-1440x960-crop-q72.jpg',
             alt: 'Premium Suite',
           },
           {
@@ -91,7 +91,7 @@ const stayContent = [
         booking: '#',
         sliderImages: [
           {
-            src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+            src: 'https://www.thedamai.com/media/pages/stay/pool-studio/c49f3b51e1-1703335724/poolstudio8gardenview-1440x960-crop-q72.jpg',
             alt: 'Deluxe Room',
           },
           {

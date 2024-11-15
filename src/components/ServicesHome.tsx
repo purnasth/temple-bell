@@ -21,7 +21,7 @@ const servicesContent = {
       booking: '#',
       sliderImages: [
         {
-          src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+          src: 'https://cdn.prod.website-files.com/60b0c490c031f80841d793e5/64df636afc3ee5b31aa65f39_Hotel%20%26%20Spa%20Resort%20Kaskady%20-%20-71-p-1600.jpg',
           alt: 'Dine',
         },
         {
@@ -42,7 +42,7 @@ const servicesContent = {
       booking: '#',
       sliderImages: [
         {
-          src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+          src: 'https://cdn.prod.website-files.com/60b0c490c031f80841d793e5/60b0c490c031f8eeaed79546_hotel-kaskady-interier-bg__1920px-16-p-1600.jpeg',
           alt: 'Hall',
         },
         {
@@ -63,7 +63,7 @@ const servicesContent = {
       booking: '#',
       sliderImages: [
         {
-          src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+          src: 'https://cdn.prod.website-files.com/60b0c490c031f80841d793e5/60b0c490c031f80224d797c8_kaskady-masaze-bg-4-p-1600.jpeg',
           alt: 'SPA',
         },
         {
@@ -84,7 +84,7 @@ const servicesContent = {
       booking: '#',
       sliderImages: [
         {
-          src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+          src: 'https://www.thedamai.com/media/pages/stay/master-pool-villa/08ebd8724a-1703335774/masterpoolvillaext-1440x960-crop-q72.jpg',
           alt: 'Pool',
         },
         {
@@ -105,7 +105,7 @@ const servicesContent = {
       booking: '#',
       sliderImages: [
         {
-          src: 'https://www.sripanwa.com/images/page/best-luxury-hotel-in-phuket-luxury-private-villa-one-bedroom.jpg',
+          src: 'https://images.squarespace-cdn.com/content/v1/5696733025981d28a35ef8ab/8a7c7340-9f83-4281-84e7-6e5773d8d97e/hotel+gym+design+ref+1.jpg',
           alt: 'Gym',
         },
         {
