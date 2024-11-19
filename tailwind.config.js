@@ -13,7 +13,7 @@ module.exports = {
         "logo-dark": "#ffeac7",
       },
       fontFamily: {
-        title: ['"Purna Title"', 'Georgia', 'Cambria', 'serif'],
+        title: ['"Elsie"', 'Georgia', 'Cambria', 'serif'],
         'work-sans': [
           '"Work Sans"',
           'ui-sans-serif',
