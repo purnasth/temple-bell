@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Purna Title';
-  src: url('./assets/fonts/careny.otf') format('opentype');
+  font-family: 'Purna Body';
+  src: url('./assets/fonts/BodyGrotesque-Regular.woff2') format('woff2');
 }
 
 @tailwind base;
@@ -26,7 +26,7 @@
   main,
   footer,
   section {
-    @apply font-work-sans bg-light;
+    @apply bg-light font-work-sans;
   }
 
   .navlink,
@@ -62,11 +62,13 @@
   }
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%)
+      hue-rotate(327deg) brightness(96%) contrast(104%);
   }
 
   .transition-300 {
@@ -91,7 +93,7 @@
 
 .rdp-root {
   color: #ffeac7;
-  --rdp-accent-color: #981C20;
+  --rdp-accent-color: #981c20;
   --rdp-accent-background-color: #981c2031;
   --rdp-day-height: 2.75rem;
   --rdp-day-width: 2.75rem;
@@ -113,9 +115,17 @@
   --rdp-range_middle-foreground-color: white;
   --rdp-range_middle-color: inherit;
   --rdp-range_start-color: white;
-  --rdp-range_start-background: linear-gradient(var(--rdp-gradient-direction), transparent 50%, var(--rdp-range_middle-background-color) 50%);
+  --rdp-range_start-background: linear-gradient(
+    var(--rdp-gradient-direction),
+    transparent 50%,
+    var(--rdp-range_middle-background-color) 50%
+  );
   --rdp-range_start-date-background-color: var(--rdp-accent-color);
-  --rdp-range_end-background: linear-gradient(var(--rdp-gradient-direction), var(--rdp-range_middle-background-color) 50%, transparent 50%);
+  --rdp-range_end-background: linear-gradient(
+    var(--rdp-gradient-direction),
+    var(--rdp-range_middle-background-color) 50%,
+    transparent 50%
+  );
   --rdp-range_end-color: white;
   --rdp-range_end-date-background-color: var(--rdp-accent-color);
   --rdp-week_number-border-radius: 100%;

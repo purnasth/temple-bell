@@ -10,11 +10,12 @@ module.exports = {
         'logo-yellow': '#FFCE35',
         'logo-maroon': '#981C20',
         'logo-green': '#346833',
-        "logo-dark": "#ffeac7",
+        'logo-dark': '#ffeac7',
       },
       fontFamily: {
         title: ['"Elsie"', 'Georgia', 'Cambria', 'serif'],
         'work-sans': [
+          // '"Purna Body"',
           '"Work Sans"',
           'ui-sans-serif',
           'system-ui',
