@@ -8,6 +8,8 @@ import 'swiper/css/effect-fade';
 import { TbArrowNarrowRight, TbArrowNarrowLeft } from 'react-icons/tb';
 import type { Swiper as SwiperInstance } from 'swiper/types';
 
+import mountainPattern from '../../assets/patterns/logo-artifacts.svg';
+
 interface Testimonial {
   author: string;
   source: string;
@@ -63,7 +65,15 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   };
 
   return (
-    <main className="bg-logo-dark relative">
+    <main className="relative bg-logo-dark">
+      <div className="pointer-events-none absolute inset-0 size-full -z-30 mix-blend-multiply opacity-5">
+        <img
+          src={mountainPattern}
+          alt="Mountain Pattern"
+          className="size-full object-contain pointer-events-none select-none"
+          draggable="false"
+        />
+      </div>
       <h3 className="mb-12 text-center text-xl capitalize leading-snug sm:text-2xl md:text-4xl lg:text-6xl lg:leading-snug xl:text-6xl 2xl:leading-normal">
         Guest Book
       </h3>

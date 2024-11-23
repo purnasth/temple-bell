@@ -12,22 +12,29 @@ import TestimonialSlider from '../components/ui/TestimonialSlider';
 const Home: React.FC = () => {
   return (
     <>
-      <main className="relative h-screen w-full bg-gradient-to-b from-[#82fcf1] to-transparent p-0">
+      <main className="relative flex h-screen w-full items-end bg-gradient-to-b from-[#82fcf1] to-transparent p-0">
         <img
           src={heroImage}
           alt="Temple Bell"
-          className="h-screen w-full object-contain"
+          className="absolute inset-0 h-screen w-full object-contain"
           draggable={false}
         />
         <div className="absolute inset-0 size-full bg-gradient-to-b from-transparent via-transparent to-light" />
-        {/* <h1 className="text-8xl">Temple Bell</h1>
-          <h2 className="text-7xl">Boutique Hotel & SPA</h2> */}
-        {/* <p className="max-w-3xl">
-          Experience serenity and elegance at Temple Bell Boutique Hotel, your
-          newest sanctuary in Lakeside, Pokhara. Nestled in the heart of nature,
-          our boutique hotel offers a harmonious blend of modern comfort and
-          traditional charm.
-        </p> */}
+        <div className="z-20 max-w-3xl space-y-3 p-6">
+          <span className="uppercase">
+            blend of modern comfort & traditional charm.
+          </span>
+          <h1 className="text-5xl leading-tight capitalize">
+            Your newest sanctuary
+          </h1>
+          {/* <h2 className="text-7xl">Boutique Hotel & SPA</h2>
+          <p className="max-w-3xl">
+            Experience serenity and elegance at Temple Bell Boutique Hotel, your
+            newest sanctuary in Lakeside, Pokhara. Nestled in the heart of
+            nature, our boutique hotel offers a harmonious blend of modern
+            comfort and traditional charm.
+          </p> */}
+        </div>
         <OffersHome />
       </main>
       <About />

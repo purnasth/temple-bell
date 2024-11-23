@@ -58,7 +58,7 @@
   }
 
   .navlink {
-    @apply transition-300 inline-flex w-full items-center justify-center border border-logo-maroon/20 bg-logo-maroon/10 p-8 text-center text-3xl capitalize tracking-wider text-dark hover:bg-logo-yellow/10 group-hover:tracking-widest;
+    @apply transition-300 inline-flex w-full items-center justify-center border border-logo-maroon/20 bg-logo-maroon/10 p-8 text-center text-3xl capitalize text-dark hover:bg-logo-green/20 group-hover:tracking-wider;
   }
 
   .filter-white {
