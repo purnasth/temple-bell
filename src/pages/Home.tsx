@@ -6,8 +6,9 @@ import OffersSlider from '../components/OffersSlider';
 
 import heroImage from '../assets/images/test.png';
 import ServicesHome from '../components/ServicesHome';
-import Nearby from '../components/ui/Nearby';
+// import Nearby from '../components/ui/Nearby';
 import TestimonialSlider from '../components/ui/TestimonialSlider';
+import EmbedAttractions from '../components/EmbedAttractions';
 
 const Home: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const Home: React.FC = () => {
           <span className="uppercase">
             blend of modern comfort & traditional charm.
           </span>
-          <h1 className="text-5xl leading-tight capitalize">
+          <h1 className="text-5xl capitalize leading-tight">
             Your newest sanctuary
           </h1>
           {/* <h2 className="text-7xl">Boutique Hotel & SPA</h2>
@@ -50,7 +51,8 @@ const Home: React.FC = () => {
         </h3>
       </section>
       <ServicesHome />
-      <Nearby />
+      <EmbedAttractions />
+      {/* <Nearby /> */}
     </>
   );
 };

@@ -12,12 +12,12 @@
     @apply bg-dark text-light;
   }
 
-  /* * {
-          scrollbar-width: thin;
-        } */
-  ::-webkit-scrollbar {
-    @apply w-0;
+  * {
+    scrollbar-width: thin;
   }
+  /* ::-webkit-scrollbar {
+    @apply w-0;
+  } */
 
   body {
     @apply font-work-sans;
