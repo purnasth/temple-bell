@@ -9,6 +9,7 @@ import ServicesHome from '../components/ServicesHome';
 // import Nearby from '../components/ui/Nearby';
 import TestimonialSlider from '../components/ui/TestimonialSlider';
 import EmbedAttractions from '../components/EmbedAttractions';
+import WellnessSpa from '../components/WellnessSpa';
 
 const Home: React.FC = () => {
   return (
@@ -42,14 +43,15 @@ const Home: React.FC = () => {
       <Stay />
       <TestimonialSlider />
       <OffersSlider />
-      <section className="relative mix-blend-difference">
+      <WellnessSpa />
+      {/* <section className="relative mix-blend-difference">
         <div className="h-[120vh] w-full bg-[url('https://cdn.prod.website-files.com/60b0c490c031f80841d793e5/60b0c490c031f82db9d79587_hotel-kaskady-wellness-spa-bg__1920px-14.jpg')] bg-cover bg-fixed"></div>
         <div className="pointer-events-none absolute inset-0 bg-dark/60"></div>
 
         <h3 className="container absolute inset-0 flex items-center justify-center px-12 py-24 text-center text-8xl leading-tight text-light [text-shadow:_0_1px_5px_#ffeac7]">
           Relax under the gentle hands of our beauticians
         </h3>
-      </section>
+      </section> */}
       <ServicesHome />
       <EmbedAttractions />
       {/* <Nearby /> */}
